@@ -1,1 +1,0 @@
-sed -i 's/https://media.giphy.com/media/iPTTjEt19igne/giphy.gif/https://media.giphy.com/media/DBfYJqH5AokgM/giphy.gif/g' index.html

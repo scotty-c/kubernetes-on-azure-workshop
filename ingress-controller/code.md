@@ -1,10 +1,10 @@
 # Ingress controller
 
 ## Enable the addon
-az aks enable-addons --resource-group k8s --name k8s --addons http_application_routing
+`az aks enable-addons --resource-group k8s --name k8s --addons http_application_routing`
 
 ## Get DNS name
-az aks show --resource-group k8s --name k8s --query addonProfiles.httpApplicationRouting.config.HTTPApplicationRoutingZoneName -o tsv
+`az aks show --resource-group k8s --name k8s --query addonProfiles.httpApplicationRouting.config.HTTPApplicationRoutingZoneName -o tsv`
 
 ## Deploying our application
 ```
@@ -32,7 +32,8 @@ spec:
         - containerPort: 3000
           hostPort: 3000
 EOF
-
+```
+```
 cat <<EOF | kubectl apply -f -
 apiVersion: v1
 kind: Service

@@ -32,8 +32,6 @@ spec:
         - containerPort: 3000
           hostPort: 3000
 EOF
-```
-```
 cat <<EOF | kubectl apply -f -
 apiVersion: v1
 kind: Service

@@ -2,56 +2,56 @@
 
 ## Create a namespace
 ```
-cat <<EOF | kubectl apply -f -​
-apiVersion: v1​
-kind: Namespace​
-metadata:​
-  name: webapp-namespace​
-EOF​
+cat <<EOF | kubectl apply -f -
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: webapp-namespace
+EOF
 ```
 
 ## Create a service account
 ```
-cat <<EOF | kubectl apply -f -​
-apiVersion: v1​
-kind: ServiceAccount​
-metadata:​
-  name: webapp-service-account​
-  namespace: webapp-namespace​
+cat <<EOF | kubectl apply -f -
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: webapp-service-account
+  namespace: webapp-namespace
 EOF
 ```
 
 ## Create a role 
 ```
-cat <<EOF | kubectl apply -f -​
-kind: Role​
-apiVersion: rbac.authorization.k8s.io/v1​
-metadata:​
-  name: webapp-role​
-  namespace: webapp-namespace​
-rules:​
-  - apiGroups: [""]​
-    resources: ["pods", "pods/log"]​
-    verbs: ["get", "list", "watch"]​
-EOF​
+cat <<EOF | kubectl apply -f -
+kind: Role
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: webapp-role
+  namespace: webapp-namespace
+rules:
+  - apiGroups: [""]
+    resources: ["pods", "pods/log"]
+    verbs: ["get", "list", "watch"]
+EOF
 ```
 
 ## Create a role binding
 ```
-​cat <<EOF | kubectl apply -f -​
-kind: RoleBinding​
-apiVersion: rbac.authorization.k8s.io/v1​
-metadata:​
-  name: webapp-role-binding​
-  namespace: webapp-namespace​
-subjects:​
-  - kind: ServiceAccount​
-    name: webapp-service-account​
-    namespace: webapp-namespace​
-roleRef:​
-  kind: Role​
-  name: webapp-role​
-  apiGroup: rbac.authorization.k8s.io​
+cat <<EOF | kubectl apply -f -
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: webapp-role-binding
+  namespace: webapp-namespace
+subjects:
+  - kind: ServiceAccount
+    name: webapp-service-account
+    namespace: webapp-namespace
+roleRef:
+  kind: Role
+  name: webapp-role
+  apiGroup: rbac.authorization.k8s.io
 EOF
 ```
 

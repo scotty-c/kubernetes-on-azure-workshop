@@ -1,11 +1,11 @@
 
 ## The hack
 
-`kubectl delete deployments.apps webapp-deployment`
-`kubectl exec -it <pod name> sh`
-`cd static`
-`vim index.html`
-`https://media.giphy.com/media/DBfYJqH5AokgM/giphy.gif`
+`kubectl delete deployments.apps webapp-deployment`  
+`kubectl exec -it <pod name> sh`  
+`cd static`  
+`vim index.html`  
+`https://media.giphy.com/media/DBfYJqH5AokgM/giphy.gif`  
 
 ## run as user 1000
 

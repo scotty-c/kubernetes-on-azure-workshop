@@ -17,12 +17,12 @@ To be able to run the labs in the workshops you will need the following
 * A bash shell (WSL works fine if you are a windows user)
 * An Azure account that has access to create service principals
 
-If you dont have an Azure account and want to run the workshops, you can sign up for an [Azure trial](https://azure.microsoft.com/en-us/offers/ms-azr-0044p/?WT.mc_id=docs-workshop-sccoulto) that will give you free credit to complete the workshop.
+If you dont have an Azure account and want to run the workshops, you can sign up for an [Azure trial](https://azure.microsoft.com/en-us/offers/ms-azr-0044p/?WT.mc_id=aksworkshop-github-sccoulto) that will give you free credit to complete the workshop.
 
 ### Installed software
 There are a few packages we will need to run the labs so we will need to install the following
 
-* [Azure cli](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&?WT.mc_id=docs-workshop-sccoulto)
+* [Azure cli](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&?WT.mc_id=aksworkshop-github-sccoulto)
 * [kubectx](https://github.com/ahmetb/kubectx)
 * jq (install from you package manager) 
 

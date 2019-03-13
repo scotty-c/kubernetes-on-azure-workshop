@@ -15,6 +15,7 @@ To be successful at getting the most out of these workshops you will need the fo
 To be able to run the labs in the workshops you will need the following 
 
 * A bash shell (WSL works fine if you are a windows user)
+  I have written a [post](https://medium.com/devopslinks/windows-for-a-linux-guy-823276351826) on how to get WSL configured for the workshops 
 * An Azure account that has access to create service principals
 
 If you dont have an Azure account and want to run the workshops, you can sign up for an [Azure trial](https://azure.microsoft.com/en-us/offers/ms-azr-0044p/?WT.mc_id=aksworkshop-github-sccoulto) that will give you free credit to complete the workshop.
@@ -36,32 +37,32 @@ At present there are four workshops in this repo. Each of them are designed for 
 ### Kubernetes on Azure full workshop
 This is the full workshop that covers Kubernetes 101, Helm, virtual kubelet and some basic istio topic. Below are the full list of topics
 
- Kubernetes 101​
+ Kubernetes 101
  
-* Introduction into Kubernetes​
-* Kubernetes components ​
-* Deploying Kubernetes on Azure​
-* Pods, services and deployments​
-* Rabc, roles and service accounts ​
-* Stateful sets​
-* Kubernetes networking and service discovery​
+* Introduction into Kubernetes
+* Kubernetes components 
+* Deploying Kubernetes on Azure
+* Pods, services and deployments
+* Rabc, roles and service accounts 
+* Stateful sets
+* Kubernetes networking and service discovery
 * Load balancing and ingress control
 
- Helm​
+ Helm
 
-* Introduction into Helm​
-* Understanding charts​
-* Deploying Helm on Kubernetes​
-* Helm cli​
-* Deploying a public chart​
-* Writing our own chart​
+* Introduction into Helm
+* Understanding charts
+* Deploying Helm on Kubernetes
+* Helm cli
+* Deploying a public chart
+* Writing our own chart
 * Helm and CNAB
 
  Kubernetes advanced topics​
 
-* Virtual kubelet ​
-* Pod security context ​
-* Introduction to istio​
+* Virtual kubelet
+* Pod security context 
+* Introduction to istio
 * Advanced application routing with istio​
 * Setting mTLS between application services with istio 
 
@@ -81,3 +82,11 @@ This workshop will take about 4hrs to complete
 This workshop adds the Kubernetes 101 modules with the advanced Kubernetes topics.  
 The slides can be found [here](slides/kubernetes-advance/kubernetes-advanced.pdf)  
 This workshop will take about 4hrs   
+
+## Further reading
+I have done a few blog posts on topics covered by this workshop for further . This list will continue to be updated.
+* [Pod security 101](https://medium.com/devopslinks/kubernetes-pod-security-101-15fe8cda829e)
+* [Understading application routing with istio](https://itnext.io/understanding-application-routing-in-istio-aade30d594f4)
+
+If there is something that is not covered in the workshops and you would like it to be. Please raise an issue on this repo and I will do my best to add it in where possible
+

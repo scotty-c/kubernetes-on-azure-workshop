@@ -6,7 +6,7 @@ cat <<EOF | kubectl apply -f -
 apiVersion: apps/v1 
 kind: Deployment
 metadata:
-  name: webapp-deployment52.187.163.193 
+  name: webapp-deployment
 spec:
   selector:
     matchLabels:

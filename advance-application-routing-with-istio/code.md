@@ -208,4 +208,4 @@ EOF
 ```
 
 ## Get your ingress ip
-`kubectl get svc istio-ingressgateway -n istio-system -o jsonpath="{.status.loadBalancer.ingress[0].ip}"​`
+`kubectl get svc istio-ingressgateway -n istio-system -o jsonpath="{.status.loadBalancer.ingress[0].ip}"`

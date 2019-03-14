@@ -14,7 +14,7 @@ az aks create --resource-group k8s \
 ```
 
 ## If you dont have the kubectl binary installed
-`​az aks install-cli`
+`az aks install-cli`
 
 ## Get your cluster credentials
 `az aks get-credentials --resource-group k8s --name k8s`

@@ -103,8 +103,8 @@ kubectl exec -n istio-app -it $POD_NAME -c istio-proxy /bin/bash
 
 ## Let's capture traffic with tcpdump
 ```
-IP=$(ip addr show eth0 | grep "inet\b" | awk '{print $2}' | cut -d/ -f1)​
-sudo tcpdump -vvv -A -i eth0 '((dst port 9080) and (net $IP))'​
+IP=$(ip addr show eth0 | grep "inet\b" | awk '{print $2}' | cut -d/ -f1)
+sudo tcpdump -vvv -A -i eth0 '((dst port 9080) and (net $IP))'
 ```
 
 ## From another terminal

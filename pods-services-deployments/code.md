@@ -27,5 +27,5 @@ EOF
 ```
 
 ## Expose our service
-`kubectl expose deployment webapp-deployment --type=LoadBalancer`
+`kubectl expose deployment webapp-deployment --type=LoadBalancer`  
 `kubectl get service`

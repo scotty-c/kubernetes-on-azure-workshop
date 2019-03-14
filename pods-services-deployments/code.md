@@ -6,7 +6,7 @@ cat <<EOF | kubectl apply -f -
 apiVersion: apps/v1 
 kind: Deployment
 metadata:
-  name: webapp-deployment
+  name: webapp-deployment52.187.163.193 
 spec:
   selector:
     matchLabels:
@@ -28,4 +28,4 @@ EOF
 
 ## Expose our service
 `kubectl expose deployment webapp-deployment --type=LoadBalancer`
-`kubectl get service​`
+`kubectl get service`

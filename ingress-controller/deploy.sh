@@ -38,7 +38,7 @@ spec:
   type: ClusterIP
 EOF
 
-DNS=$(az aks show --resource-group sccoulto-aks-useast --name k8s --query addonProfiles.httpApplicationRouting.config.HTTPApplicationRoutingZoneName -o tsv)
+DNS=$(az aks show --resource-group k8s --name k8s --query addonProfiles.httpApplicationRouting.config.HTTPApplicationRoutingZoneName -o tsv)
 
 cat <<EOF | kubectl apply -f -
 apiVersion: extensions/v1beta1

@@ -58,12 +58,12 @@ This is the full workshop that covers Kubernetes 101, Helm, virtual kubelet and 
 * Writing our own chart
 * Helm and CNAB
 
- Kubernetes advanced topics​
+ Kubernetes advanced topics
 
 * Virtual kubelet
 * Pod security context 
 * Introduction to istio
-* Advanced application routing with istio​
+* Advanced application routing with istio
 * Setting mTLS between application services with istio 
 
 This workshop takes about 6hrs to give as instructor lead workshop.  

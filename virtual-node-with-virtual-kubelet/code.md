@@ -4,7 +4,7 @@
 
 `az aks install-connector --resource-group k8s --name k8s --os-type both`
 
-`kubectl get nodes​`
+`kubectl get nodes`
 
 
 ```

@@ -8,7 +8,7 @@
 az aks create --resource-group k8s \
     --name k8s \
     --generate-ssh-keys \
-    --kubernetes-version 1.12.5 \
+    --kubernetes-version 1.12.6 \
     --enable-rbac \
     --node-vm-size Standard_DS2_v2
 ```

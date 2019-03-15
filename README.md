@@ -15,7 +15,9 @@ To be successful at getting the most out of these workshops you will need the fo
 To be able to run the labs in the workshops you will need the following 
 
 * A bash shell (WSL works fine if you are a windows user)
-  I have written a [post](https://medium.com/devopslinks/windows-for-a-linux-guy-823276351826) on how to get WSL configured for the workshops 
+  I have written a [post](https://medium.com/devopslinks/windows-for-a-linux-guy-823276351826) on how to get WSL configured for the workshops.  
+  If a bash shell is not available to you please use [azure cloud shell](https://azure.microsoft.com/en-au/features/cloud-shell/?WT.mc_id=aksworkshop-github-sccoulto)
+
 * An Azure account that has access to create service principals
 
 If you dont have an Azure account and want to run the workshops, you can sign up for an [Azure trial](https://azure.microsoft.com/en-us/offers/ms-azr-0044p/?WT.mc_id=aksworkshop-github-sccoulto) that will give you free credit to complete the workshop.
@@ -41,30 +43,30 @@ This is the full workshop that covers Kubernetes 101, Helm, virtual kubelet and 
  
 * Introduction into Kubernetes
 * Kubernetes components 
-* Deploying Kubernetes on Azure
-* Pods, services and deployments
-* Rabc, roles and service accounts 
-* Stateful sets
+* [Deploying Kubernetes on Azure](deploying-kubernetes-on-azure/code.md)
+* [Pods, services and deployments](pods-services-deployments/code.md)
+* [Rabc, roles and service accounts](rbac-roles-service-accounts/code.md) 
+* [Stateful sets](statefull-sets/code.md)
 * Kubernetes networking and service discovery
-* Load balancing and ingress control
+* [Load balancing and ingress control](ingress-controller/code.md)
 
  Helm
 
 * Introduction into Helm
 * Understanding charts
-* Deploying Helm on Kubernetes
+* [Deploying Helm on Kubernetes](installing-helm-on-kubernetes/code.md)
 * Helm cli
-* Deploying a public chart
-* Writing our own chart
+* [Deploying a public chart](depolying-a-public-chart/code.md)
+* [Writing our own chart](writing-our-own-chart/code.md)
 * Helm and CNAB
 
  Kubernetes advanced topics
 
-* Virtual kubelet
-* Pod security context 
+* [Virtual kubelet](virtual-node-with-virtual-kubelet/code.md)
+* [Pod security context](pod-security-policy/code.md) 
 * Introduction to istio
-* Advanced application routing with istio
-* Setting mTLS between application services with istio 
+* Advanced application routing with istio(advanced-application-routing-with-istio/code.md)
+* [Setting mTLS between application services with istio](mTLS-with-istio/code.md) 
 
 This workshop takes about 6hrs to give as instructor lead workshop.  
 The slides can be found [here](slides/full-workshop/Kubernetes-on-Azure.pdf)  

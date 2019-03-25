@@ -1,5 +1,7 @@
 # Pods, services and deployments
 
+In this module we are going to deploy our first deployment, blow is the code to do so.
+
 ## Our Deployment
 ```
 cat <<EOF | kubectl apply -f -
@@ -26,6 +28,12 @@ spec:
 EOF
 ```
 
+Now to expose the service so you can hit the application from the outside world.
+
 ## Expose our service
 `kubectl expose deployment webapp-deployment --type=LoadBalancer`  
 `kubectl get service`
+
+
+`kubectl get service` will give you the public ip address for the application. It will then be available  
+at `http://<Your public ip>:3000` 

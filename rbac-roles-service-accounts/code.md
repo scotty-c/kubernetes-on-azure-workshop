@@ -132,3 +132,6 @@ Now let's check our namespace
 
 Now we have limited the blast radius of our application to only the namespace that it resides in. 
 So there will be no way that we can leak configmaps or secrets from other applications that are not in this namespace.
+
+Lastly and this is super IMPORTANT !!!! run the cleanup script before you move to the next module  
+`./cleanup.sh`

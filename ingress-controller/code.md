@@ -1,7 +1,7 @@
 # Ingress controller
 
-In this module we are going to deploy the Azure ingress control that Azure has out of the box.  
-This is not meant to be used for a production use as it is a single pod. To learn more about the restrictions  
+In this module we are going to deploy the Azure ingress control that Azure has out of the box.    
+This is not meant to be used for a production use as it is a single pod. To learn more about the restrictions    
 please read [here](https://docs.microsoft.com/en-us/azure/aks/http-application-routing/?WT.mc_id=aksworkshop-github-sccoulto)  
 
 To enable the add on 
@@ -78,3 +78,6 @@ spec:
         path: /
 EOF        
 ```
+
+
+Now check your browser using http://webapp.$DNS

@@ -1,6 +1,13 @@
 # Advanced application routing with istio
 
 ## Install istio
+
+To install istio run the following from the root of the repo that you have cloned
+
+`./advance-application-routing-with-istio/script.sh`
+
+Below is a copy of what the script
+
 ```
 !/bin/bash
 
@@ -91,6 +98,9 @@ pre_reqs
 install_tiller
 install
 ```
+
+
+Next we are going to 
 `kubectl label namespace default istio-injection=enabled`
 
 ## Deploy the service and webapp

@@ -1,6 +1,10 @@
 # Installing helm on Kubernetes
 
 ## Installing helm
+
+In this module we are going to deploy Helm on Kubernetes.  
+There is a script below to install the Helm binary 
+
 ```
 #!/bin/bash
 
@@ -16,6 +20,8 @@ curl -sL "https://storage.googleapis.com/kubernetes-helm/helm-v$HELM_VERSION-$AR
 chmod +x $ARCH/helm 
 sudo mv linux-amd64/helm /usr/local/bin/
 ```
+
+Now we will set up the service account and role binding to give Helm the permissions that it needs.  
 
 ## Installing Tiller
 ```
@@ -39,7 +45,9 @@ subjects:
     name: tiller
     namespace: kube-system
 EOF
-``
+```
+
+Lastly we will connect our Helm client to tiller
 
 `helm init --service-account tiller`
 

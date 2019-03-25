@@ -56,7 +56,7 @@ This is the full workshop that covers Kubernetes 101, Helm, virtual kubelet and 
 * Understanding charts
 * [Deploying Helm on Kubernetes](installing-helm-on-kubernetes/code.md)
 * Helm cli
-* [Deploying a public chart](depolying-a-public-chart/code.md)
+* [Deploying a public chart](deploying-a-public-chart/code.md)
 * [Writing our own chart](writing-our-own-chart/code.md)
 * Helm and CNAB
 

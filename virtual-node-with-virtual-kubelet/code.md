@@ -2,6 +2,8 @@
 
 ## Deploying virtual Kubeket
 
+`az provider register -n Microsoft.ContainerInstance`
+
 `az aks install-connector --resource-group k8s --name k8s --os-type both`
 
 `kubectl get nodes`
@@ -20,6 +22,9 @@ spec:
     name: vk-webapp
     resources:
       requests:
+        memory: 1G
+        cpu: 1
+      limits:
         memory: 1G
         cpu: 1
     ports:

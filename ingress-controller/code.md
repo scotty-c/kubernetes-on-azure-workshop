@@ -41,7 +41,6 @@ spec:
         ports:
         - containerPort: 3000
           hostPort: 3000
-To enable the add on 
 EOF
 cat <<EOF | kubectl apply -f -
 apiVersion: v1
@@ -76,7 +75,7 @@ spec:
           serviceName: webapp
           servicePort: 80
         path: /
-EOF        
+EOF
 ```
 
 

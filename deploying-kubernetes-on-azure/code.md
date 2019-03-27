@@ -29,5 +29,5 @@ Next install the `kubectl` binary if you dont already have it installed. Now if 
 `az aks get-credentials --resource-group k8s --name k8s`
 
 ## Test your cluster
-`kubectl get nodes`
+`kubectl get nodes`  
 `kubectl get pods --all-namespaces`

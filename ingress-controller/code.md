@@ -12,7 +12,9 @@ To enable the add on
 Now the addon is going to create a public DNS name to access the ingress control rules to get that DNS name  
 
 ## Get DNS name
-`az aks show --resource-group k8s --name k8s --query addonProfiles.httpApplicationRouting.config.HTTPApplicationRoutingZoneName -o tsv`
+```
+az aks show --resource-group k8s --name k8s --query addonProfiles.httpApplicationRouting.config.HTTPApplicationRoutingZoneName -o tsv
+```
 
 Now we deploy our deployments with the ingress DNS name
 

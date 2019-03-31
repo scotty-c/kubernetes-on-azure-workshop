@@ -87,6 +87,7 @@ This workshop will take about 4hrs
 
 ## Further reading
 I have done a few blog posts on topics covered by this workshop for further . This list will continue to be updated.
+* [Choosing the right container base image](https://medium.com/@scott.coulton/i-cho-cho-chose-you-container-image-part-1-fa6671d9ae1f)
 * [Pod security 101](https://medium.com/devopslinks/kubernetes-pod-security-101-15fe8cda829e)
 * [Understading application routing with istio](https://itnext.io/understanding-application-routing-in-istio-aade30d594f4)
 

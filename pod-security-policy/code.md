@@ -1,7 +1,6 @@
 
-## The hack
+## The hack 
 
-`kubectl delete deployments.apps webapp-deployment`  
 `kubectl exec -it <pod name> sh`  
 `cd static`  
 `vim index.html`  

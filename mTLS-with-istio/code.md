@@ -1,7 +1,7 @@
 # mTLS with istio
 
 ## Create our namespace
-`kubectl create namespace istio-app`
+`kubectl create namespace istio-app`  
 `kubectl label namespace istio-app istio-injection=enabled`
 
 ## Enbale mTLS across our namespace

@@ -82,7 +82,7 @@ This workshop will take about 4hrs to complete
 
 ### Advanced Kubernetes
 This workshop adds the Kubernetes 101 modules with the advanced Kubernetes topics.  
-The slides can be found [here](slides/kubernetes-advance/kubernetes-advanced.pdf)  
+The slides can be found [here](slides/kubernetes-advance/Kubernetes-advanced.pdf)  
 This workshop will take about 4hrs   
 
 ## Further reading

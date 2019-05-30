@@ -88,7 +88,7 @@ spec:
     - "*"
 EOF
 ```
-`kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.status.loadBalancer.ingress[0].ip}')`
+`kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.status.loadBalancer.ingress[0].ip}'`
 
 ## Check out your mTLS status
 `istioctl authn tls-check | grep .istio-app.svc.cluster.local`

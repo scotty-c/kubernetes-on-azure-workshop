@@ -1,6 +1,6 @@
 # Pods, services and deployments
 
-In this module we are going to deploy our first deployment, blow is the code to do so.
+In this module we are going to deploy our first deployment, below is the code to do so.
 
 ## Our Deployment
 ```

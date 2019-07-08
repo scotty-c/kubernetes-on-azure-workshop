@@ -38,7 +38,7 @@ az aks create \
     --resource-group $AKS_CLUSTER_RG \
     --name k8s \
     --node-count 3 \
-    --kubernetes-version 1.11.8 \
+    --kubernetes-version 1.14.0 \
     --generate-ssh-keys \
     --network-plugin azure \
     --service-cidr 10.0.0.0/16 \

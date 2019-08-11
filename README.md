@@ -1,6 +1,7 @@
 # Kubernetes on Azure
 
 This is the repo that contains multiple workshops for Kubernetes on Azure and the supporting code examples.
+Note This repo is under a refresh. Some of the new modules dont have slides yet.
 
 ## Prerequisites
 

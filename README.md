@@ -14,10 +14,6 @@ To be successful at getting the most out of these workshops you will need the fo
 ### Equipment
 To be able to run the labs in the workshops you will need the following 
 
-* A bash shell (WSL works fine if you are a windows user)
-  I have written a [post](https://medium.com/devopslinks/windows-for-a-linux-guy-823276351826) on how to get WSL configured for the workshops.  
-  If a bash shell is not available to you please use [azure cloud shell](https://azure.microsoft.com/en-au/features/cloud-shell/?WT.mc_id=aksworkshop-github-sccoulto)
-
 * An Azure account that has access to create service principals
 
 If you dont have an Azure account and want to run the workshops, you can sign up for an [Azure trial](https://azure.microsoft.com/en-us/offers/ms-azr-0044p/?WT.mc_id=aksworkshop-github-sccoulto) that will give you free credit to complete the workshop.
@@ -25,12 +21,26 @@ If you dont have an Azure account and want to run the workshops, you can sign up
 ### Installed software
 There are a few packages we will need to run the labs so we will need to install the following
 
-* [Azure cli](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&?WT.mc_id=aksworkshop-github-sccoulto)
-* [kubectx](https://github.com/ahmetb/kubectx)
-* jq (install from you package manager) 
+* [Docker](https://www.docker.com/)
 
+There is a pre built docker image with all the software that you need.
+ 
 ## How to use the workshops
+
+Pull and run the docker image  
+ ```
+ docker run -d --privileged --name workshop scottyc/workshop && docker exec -it workshop sh
+ ```  
+if you want to keep the data from the workshop persistent, you can use the following  
+```  
+docker run -d --privileged -v {SOME_DIR}:/workshop --name workshop scottyc/workshop && docker exec -it workshop sh
+```   
+git clone the workshop `git clone https://github.com/scotty-c/kubernetes-on-azure-workshop.git`  
+Now from inside the containers shell login to the az cli with `az login` and follow the prompts.
+
 Each folder is named after a corresponding module in the workshop. Inside that folder is all the code examples for that module.
+
+Alternatively if you are running vscode and have the [remote container extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers/?WT.mc_id=aksworkshop-github-sccoulto) you can just open up a folder in the remote container.
 
 ## Workshops 
 

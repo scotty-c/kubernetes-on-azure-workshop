@@ -5,6 +5,8 @@ In this module we deploy [super gloo](https://supergloo.solo.io/). Super gloo is
 ##cli
 To install the cli you need to chose one of the following depending on your OS type.
 
+If your using the pre built Docker container you can skip the install as the container already has the binary for you.
+
 For MacOS
 ```
 brew install solo-io/tap/supergloo

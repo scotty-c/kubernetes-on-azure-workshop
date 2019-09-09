@@ -36,7 +36,8 @@ if you want to keep the data from the workshop persistent, you can use the follo
 ```  
 docker run -d --privileged -v {SOME_DIR}:/workshop --name workshop scottyc/workshop && docker exec -it workshop sh
 ```   
-git clone the workshop `git clone https://github.com/scotty-c/kubernetes-on-azure-workshop.git`  
+git clone the workshop 
+```git clone https://github.com/scotty-c/kubernetes-on-azure-workshop.git```  
 Now from inside the containers shell login to the az cli with `az login` and follow the prompts.
 
 Each folder is named after a corresponding module in the workshop. Inside that folder is all the code examples for that module.

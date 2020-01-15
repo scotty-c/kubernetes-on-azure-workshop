@@ -16,7 +16,7 @@ Next we are going to create the AKS cluster. If you are using a trial account yo
 az aks create --resource-group k8s \
     --name k8s \
     --generate-ssh-keys \
-    --kubernetes-version 1.14.0 \
+    --kubernetes-version 1.15.7 \
     --enable-rbac \
     --node-vm-size Standard_DS2_v2
 ```
@@ -37,3 +37,5 @@ To look at our nodes we will issue the following command
 `kubectl get nodes`   
 Then to look at the pods we have issues the following  
 `kubectl get pods --all-namespaces`
+
+Now we move onto the next module [here](../pods-services-deployments/code.md)

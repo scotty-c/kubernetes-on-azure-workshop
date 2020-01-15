@@ -1,5 +1,11 @@
 # Rbac roles and service accounts
 
+![slide 1](../slides/rbac-roles-service-accounts/Slide1.jpg)
+![slide 2](../slides/rbac-roles-service-accounts/Slide2.jpg)
+![slide 3](../slides/rbac-roles-service-accounts/Slide3.jpg)
+![slide 4](../slides/rbac-roles-service-accounts/Slide4.jpg)
+![slide 5](../slides/rbac-roles-service-accounts/Slide5.jpg)
+
 ## Namespaces
 
 Lets look at the default namespaces available to us.  
@@ -135,3 +141,5 @@ So there will be no way that we can leak configmaps or secrets from other applic
 
 Lastly and this is super IMPORTANT !!!! run the cleanup script before you move to the next module  
 `./cleanup.sh`
+
+Now we move onto the next module [here](../statefull-sets/code.md)

@@ -1,5 +1,10 @@
 # Static claims
 
+![slide 1](../slides/statefull-sets/Slide1.jpg)
+![slide 2](../slides/statefull-sets/Slide2.jpg)
+![slide 3](../slides/statefull-sets/Slide3.jpg)
+![slide 4](../slides/statefull-sets/Slide4.jpg)
+
 In this module we are going to look at creating a stateful set in Kubernetes.  
 Stateful sets in Kubernetes attach a cloud disk to a pod. In this case we are using Azure disk.  
 
@@ -50,3 +55,4 @@ spec:
           name: nginx-storage
 EOF
 ```
+Now we move onto the next module [here](../ingress-controller/code.md)

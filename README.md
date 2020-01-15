@@ -52,9 +52,10 @@ At present there are four workshops in this repo. Each of them are designed for 
 This is the full workshop that covers Kubernetes 101, Helm, virtual kubelet and some basic istio topic. Below are the full list of topics
 
  Kubernetes 101
- 
-* Introduction into Kubernetes
-* Kubernetes components 
+
+* [Agenda](slides/intro/code.md) 
+* [Introduction into Kubernetes](slides/introduction-into-kubernetes/code.md)
+* [Kubernetes components](slides/kubernetes-components/code.md) 
 * [Deploying Kubernetes on Azure](deploying-kubernetes-on-azure/code.md)
 * [Pods, services and deployments](pods-services-deployments/code.md)
 * [Rabc, roles and service accounts](rbac-roles-service-accounts/code.md) 
@@ -81,7 +82,6 @@ This is the full workshop that covers Kubernetes 101, Helm, virtual kubelet and 
 * [Setting mTLS between application services with istio](mTLS-with-istio/code.md) 
 
 This workshop takes about 6hrs to give as instructor lead workshop.  
-The slides can be found [here](slides/full-workshop/Kubernetes-on-Azure.pdf)  
 
 
 ### Kubernetes 101

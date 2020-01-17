@@ -103,18 +103,24 @@ spec:
 EOF
 ```
 
+Please read through the next section and use the script provided. 
+
 Then we can check our pods simulating the privileges of the service-account we will set up our kubeconfig to only use our service account
 We will first get the secret for that service account  
 `SECRET_NAME=$(kubectl get sa webapp-service-account --namespace webapp-namespace -o json | jq -r .secrets[].name)`  
 
 Then create a ca certificate 
-`kubectl get secret --namespace webapp-namespace "${SECRET_NAME}" -o json | jq -r '.data["ca.crt"]' | base64 --decode > ca.crt`
+`kubectl get secret --namespace webapp-namespace "${SECRET_NAME}" -o json | jq -r '.data["ca.crt"]' | base64 -d > ca.crt`
 
 Then get the user token from our secret
 `USER_TOKEN=$(kubectl get secret --namespace webapp-namespace "${SECRET_NAME}" -o json | jq -r '.data["token"]' | base64 --decode)`
 
 Now will will setup our kubeconfig file
 ```
+SERVICE_ACCOUNT_NAME="webapp-service-account"
+NAMESPACE="webapp-namespace"
+KUBECFG_FILE_NAME="admin.conf"
+
 context=$(kubectl config current-context)
 CLUSTER_NAME=$(kubectl config get-contexts "$context" | awk '{print $3}' | tail -n 1)
 ENDPOINT=$(kubectl config view -o jsonpath="{.clusters[?(@.name == \"${CLUSTER_NAME}\")].cluster.server}")
@@ -123,7 +129,7 @@ kubectl config set-credentials "webapp-service-account-webapp-namespace-${CLUSTE
 kubectl config set-context "webapp-service-account-webapp-namespace-${CLUSTER_NAME}" --kubeconfig=admin.conf --cluster="${CLUSTER_NAME}" --user="webapp-service-account-webapp-namespace-${CLUSTER_NAME}" --namespace webapp-namespace
 kubectl config use-context "webapp-service-account-webapp-namespace-${CLUSTER_NAME}" --kubeconfig="${KUBECFG_FILE_NAME}"
 ```
-note if you want to cheat there is a shell script [here](script.sh)
+Please use the script [here](script.sh)
 
 We will then load the file in our terminal
 `export KUBECONFIG=admin.conf`

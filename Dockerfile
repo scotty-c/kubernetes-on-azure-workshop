@@ -15,6 +15,7 @@ RUN apk add bash \
             openssl-dev \
             python-dev \
             make \
+            coreutils \
             ca-certificates && \
     curl -o kubectl https://storage.googleapis.com/kubernetes-release/release/v1.15.7/bin/linux/amd64/kubectl && \
     mv kubectl /usr/local/bin && \
@@ -37,4 +38,7 @@ ENV PATH="$PATH:/root/.porter"
 ENV PATH="$PATH:/root/.linkerd2/bin"   
 ENV PATH="$PATH:/root/.supergloo/bin"  
 
+ADD .bashrc /root/.bashrc
+
 WORKDIR /workshop
+

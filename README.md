@@ -17,7 +17,7 @@ To be able to run the labs in the workshops you will need the following
 
 * An Azure account that has access to create service principals
 
-If you dont have an Azure account and want to run the workshops, you can sign up for an [Azure trial](https://azure.microsoft.com/en-us/offers/ms-azr-0044p/?WT.mc_id=aksworkshop-github-sccoulto) that will give you free credit to complete the workshop.
+If you dont have an Azure account and want to run the workshops, you can sign up for an [Azure trial](https://azure.microsoft.com/offers/ms-azr-0044p/?WT.mc_id=opensource-0000-sccoulto) that will give you free credit to complete the workshop.
 
 ### Installed software
 There are a few packages we will need to run the labs so we will need to install the following
@@ -42,7 +42,7 @@ Now from inside the containers shell login to the az cli with `az login` and fol
 
 Each folder is named after a corresponding module in the workshop. Inside that folder is all the code examples for that module.
 
-Alternatively if you are running vscode and have the [remote container extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers/?WT.mc_id=aksworkshop-github-sccoulto) you can just open up a folder in the remote container.
+Alternatively if you are running vscode and have the [remote container extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers%2F%3FWT.mc_id%3Daksworkshop-github-sccoulto&WT.mc_id=opensource-0000-sccoulto) you can just open up a folder in the remote container.
 
 ## Workshops 
 
